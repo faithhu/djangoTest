@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="//libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="sidebar" class="sidebar">
+			{% include 'xmj/nav.html' %}
+		</div>
+		<div class="row col-lg-12">
+			{% block content %}
+				<p>主要内容</p>
+			{% endblock%}
+		</div>
+	</body>
+</html>
